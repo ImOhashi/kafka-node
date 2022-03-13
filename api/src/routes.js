@@ -6,7 +6,7 @@ routes.post("/certifications", async (req, res) => {
   const message = {
     user: {
       id: 1,
-      name: "Diego Fernandes",
+      name: "Takai Ohashi",
     },
     course: "Kafka com Node.js",
     grade: 5,
