@@ -13,11 +13,11 @@ const port = 3000;
 const kafka = new kafkajs.Kafka({
   clientId: "api",
   brokers: ["localhost:9092"],
-  logLevel: logLevel.WARN,
+  logLevel: logLevel.NOTHING,
   retry: {
-      initialRetryTime: 300,
-      retries: 10
-  }
+    initialRetryTime: 3000,
+    retries: 10,
+  },
 });
 
 const producer = kafka.producer();
