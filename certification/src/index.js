@@ -9,7 +9,6 @@ const kafka = new kafkajs.Kafka({
 const topic = "issue-certificate";
 
 const consumer = kafka.consumer({ groupId: "certificate-group" });
-const producer = kafka.producer();
 
 async function run() {
   await consumer.connect();
